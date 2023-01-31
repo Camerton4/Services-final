@@ -808,7 +808,8 @@ a:active {
   background-color: inherit;
   position: relative;
   height: 24px;
-  padding-left: 26px; }
+  padding-left: 26px;
+  color: black; }
 
 @media (min-width: 250px) {
   .header__title_swiper {
@@ -898,7 +899,8 @@ a:active {
   background-color: inherit;
   position: relative;
   height: 24px;
-  padding-left: 26px; }
+  padding-left: 26px;
+  color: black; }
 
 .sw_arrow2 {
   background: url(./static/arrow.svg) no-repeat 0 50%;
@@ -952,7 +954,8 @@ a:active {
   background-color: #FF3E79;
   border-radius: 16px;
   color: white;
-  border: 0; }
+  border: 0;
+  white-space: nowrap; }
 
 @media (min-width: 250px) {
   .slide3 {
