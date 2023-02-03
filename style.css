@@ -708,7 +708,8 @@ h1::before {
   .about-flex {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; }
+    align-items: flex-start;
+    margin-bottom: 20px; }
   .image__file {
     width: 50vw; }
   .about {
@@ -724,7 +725,8 @@ h1::before {
     margin: 0 auto; }
   main {
     margin-top: -88px;
-    padding-left: 34px; }
+    padding-left: 34px;
+    width: 100%; }
   h1 {
     margin-bottom: 40px; }
   h1::before {
@@ -745,7 +747,7 @@ h1::before {
   .about {
     align-items: center;
     width: 650px;
-    height: 28vh; }
+    height: 20vh; }
   .about__text {
     width: 500px;
     position: relative;
@@ -800,7 +802,8 @@ h1::before {
   height: 40px;
   white-space: nowrap;
   vertical-align: middle;
-  z-index: 100; }
+  z-index: 100;
+  overflow: hidden; }
 
 .navigation__burger {
   border: none;
@@ -819,7 +822,8 @@ h1::before {
 
 .navigation__request {
   background: url(./static/repair.svg) no-repeat 0 0;
-  position: relative; }
+  position: relative;
+  overflow: visible; }
 
 .navigation__request::before {
   content: "";
@@ -831,7 +835,8 @@ h1::before {
   top: 5px; }
 
 .navigation__status {
-  background: url(./static/checkstatus.svg) no-repeat center; }
+  background: url(./static/checkstatus.svg) no-repeat center;
+  overflow: visible; }
 
 .icon > span {
   display: none; }
@@ -890,7 +895,7 @@ h1::before {
   .about {
     align-items: center;
     width: 650px;
-    height: 40vh; }
+    height: 20vh; }
   .about__text {
     width: 500px;
     position: relative;
@@ -1457,7 +1462,7 @@ a:active {
 
 .modal__feedback_open {
   display: block;
-  transform: translateX(0px);
+  transform: translateX(30px);
   transition: 500ms; }
 
 .modal_feedback_close {
@@ -1490,9 +1495,9 @@ h3::before {
   height: 24px;
   left: 0; }
 
-@media (min-width: 250px) {
+@media (min-width: 320px) {
   .modal__call {
-    max-width: 400px;
+    max-width: 366px;
     padding-left: 16px; }
     .modal__call .input {
       width: 288px;
@@ -1504,7 +1509,7 @@ h3::before {
       top: 0px;
       left: 60%; }
   .modal__feedback {
-    max-width: 400px;
+    max-width: 366px;
     padding-left: 16px; }
     .modal__feedback .input {
       width: 288px;
@@ -1517,10 +1522,15 @@ h3::before {
     .modal__feedback .modal__feedback_button {
       position: relative;
       top: 0px;
-      left: 180px; } }
+      left: 180px; }
+  .modal__feedback_open {
+    transform: translateX(0px); } }
 
 @media (min-width: 768px) {
+  .modal__feedback_open {
+    transform: translateX(-10px); }
   .modal__call {
+    max-width: 400px;
     width: 440px; }
     .modal__call .input {
       width: 376px; }
@@ -1529,6 +1539,7 @@ h3::before {
   .modal_call_close {
     left: -70px; }
   .modal__feedback {
+    max-width: 400px;
     width: 440px; }
     .modal__feedback .input {
       width: 376px; }
